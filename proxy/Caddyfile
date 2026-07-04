@@ -19,7 +19,12 @@ login.gov.pl, www.login.gov.pl {
 	reverse_proxy gov:9840
 }
 
+# mock brands (facebook.com, youtube.com, allegro.pl, …) — generated from
+# sites/webmock/brands.json by build.py; each block terminates TLS with the
+# local CA and proxies to the single webmock service.
+import /etc/caddy/mocks.caddy
+
 # plain-HTTP intranet landing so the desktop has a friendly start page
 :80 {
-	respond "net-user-pl virtual internet is up. Try https://mbank.pl / https://phone.jan.pl"
+	respond "net-user-pl virtual internet is up. Try https://mbank.pl / https://phone.jan.pl / https://facebook.com"
 }

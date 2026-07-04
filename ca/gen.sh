@@ -10,6 +10,16 @@ HERE="$(cd "$(dirname "$0")" && pwd)"
 OUT="$HERE/out"
 DOMAINS=("mbank.pl" "phone.jan.pl" "login.gov.pl" "poczta.jan.pl")
 
+# Extra mock-brand domains (facebook.com, youtube.com, …) come from the webmock
+# registry via sites/webmock/build.py. Append them so each gets a leaf cert.
+MOCK_DOMAINS_FILE="$HERE/mock-domains.txt"
+if [ -f "$MOCK_DOMAINS_FILE" ]; then
+  while IFS= read -r line; do
+    line="${line%%#*}"; line="$(echo "$line" | tr -d '[:space:]')"
+    [ -n "$line" ] && DOMAINS+=("$line")
+  done < "$MOCK_DOMAINS_FILE"
+fi
+
 mkdir -p "$OUT"
 cd "$OUT"
 

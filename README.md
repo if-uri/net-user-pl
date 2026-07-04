@@ -18,9 +18,15 @@ Part of the trio: **net-user-pl** (the network) · [pc-user-pl](https://github.c
 | `bank` | virtual mbank.pl with SMS one-time-code login | `bank://` |
 | `gov` | virtual login.gov.pl (Profil Zaufany stub, human-in-the-loop) | `gov://` |
 | `sms-gateway` | the virtual carrier: delivers OTPs to a handset inbox | `sms://` |
+| `webmock` | 24 branded mocks of popular sites (facebook.com, youtube.com, allegro.pl…), host-routed from one server | `web://` |
 
 Virtual domains (resolve to the proxy via docker embedded DNS):
-`mbank.pl`, `login.gov.pl`, `phone.jan.pl` (served by mobile-user-pl), `poczta.jan.pl`.
+`mbank.pl`, `login.gov.pl`, `phone.jan.pl` (served by mobile-user-pl), `poczta.jan.pl`,
+plus the **webmock brands** — real names like `facebook.com`, `instagram.com`, `youtube.com`,
+`google.com`, `gmail.com`, `wikipedia.org`, `github.com`, `amazon.pl`, `allegro.pl`, `olx.pl`,
+`netflix.com`, `spotify.com`, `x.com`, `linkedin.com`, `reddit.com`, `tiktok.com`, `discord.com`,
+`whatsapp.com`, `telegram.org`, `airbnb.com`, `booking.com`, `wp.pl`, `onet.pl`, `stackoverflow.com`
+— each with valid HTTPS from the local CA. Full list + how to extend: [`sites/webmock/README.md`](sites/webmock/README.md).
 
 ## Run
 

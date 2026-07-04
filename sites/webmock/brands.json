@@ -1,0 +1,29 @@
+{
+  "_comment": "Rejestr atrap popularnych serwisów dla wirtualnego internetu bliźniaka. Każdy wpis = jedna domena serwowana przez webmock (routing po nagłówku Host), z ważnym HTTPS z lokalnego CA i zdarzeniami web:// na szynie. Rozszerzaj tę listę — build.py generuje z niej certy, bloki Caddy i aliasy compose. 'kind' wybiera szablon UI atrapy.",
+  "brands": [
+    {"domain": "facebook.com",     "name": "Facebook",       "kind": "social", "color": "#1877f2", "tagline": "Łącz się ze znajomymi i światem wokół Ciebie."},
+    {"domain": "instagram.com",    "name": "Instagram",      "kind": "social", "color": "#c13584", "tagline": "Zdjęcia i filmy od znajomych."},
+    {"domain": "x.com",            "name": "X",              "kind": "social", "color": "#000000", "tagline": "Co się dzieje?"},
+    {"domain": "linkedin.com",     "name": "LinkedIn",       "kind": "social", "color": "#0a66c2", "tagline": "Witaj w Twojej sieci zawodowej."},
+    {"domain": "reddit.com",       "name": "Reddit",         "kind": "social", "color": "#ff4500", "tagline": "Pierwsza strona internetu."},
+    {"domain": "tiktok.com",       "name": "TikTok",         "kind": "video",  "color": "#010101", "tagline": "Filmy, które warto obejrzeć."},
+    {"domain": "youtube.com",      "name": "YouTube",        "kind": "video",  "color": "#ff0000", "tagline": "Transmituj to, co lubisz."},
+    {"domain": "netflix.com",      "name": "Netflix",        "kind": "video",  "color": "#e50914", "tagline": "Filmy i seriale bez końca."},
+    {"domain": "spotify.com",      "name": "Spotify",        "kind": "video",  "color": "#1db954", "tagline": "Muzyka dla każdego."},
+    {"domain": "google.com",       "name": "Google",         "kind": "search", "color": "#4285f4", "tagline": "Szukaj w wirtualnym internecie."},
+    {"domain": "gmail.com",        "name": "Gmail",          "kind": "mail",   "color": "#ea4335", "tagline": "Poczta Google."},
+    {"domain": "wikipedia.org",    "name": "Wikipedia",      "kind": "wiki",   "color": "#000000", "tagline": "Wolna encyklopedia."},
+    {"domain": "github.com",       "name": "GitHub",         "kind": "dev",    "color": "#24292f", "tagline": "Tam, gdzie buduje się świat oprogramowania."},
+    {"domain": "stackoverflow.com","name": "Stack Overflow", "kind": "dev",    "color": "#f48024", "tagline": "Pytania i odpowiedzi dla programistów."},
+    {"domain": "amazon.pl",        "name": "Amazon",         "kind": "shop",   "color": "#ff9900", "tagline": "Wszystko dla domu i firmy."},
+    {"domain": "allegro.pl",       "name": "Allegro",        "kind": "shop",   "color": "#ff5a00", "tagline": "Kupuj i sprzedawaj online."},
+    {"domain": "olx.pl",           "name": "OLX",            "kind": "shop",   "color": "#002f34", "tagline": "Ogłoszenia lokalne."},
+    {"domain": "wp.pl",            "name": "WP",             "kind": "portal", "color": "#8f0000", "tagline": "Portal informacyjny."},
+    {"domain": "onet.pl",          "name": "Onet",           "kind": "portal", "color": "#ee1c24", "tagline": "Najważniejsze informacje dnia."},
+    {"domain": "discord.com",      "name": "Discord",        "kind": "social", "color": "#5865f2", "tagline": "Twoje miejsce do rozmów."},
+    {"domain": "whatsapp.com",     "name": "WhatsApp",       "kind": "social", "color": "#25d366", "tagline": "Proste, bezpieczne wiadomości."},
+    {"domain": "telegram.org",     "name": "Telegram",       "kind": "social", "color": "#229ed9", "tagline": "Szybkie i bezpieczne wiadomości."},
+    {"domain": "airbnb.com",       "name": "Airbnb",         "kind": "shop",   "color": "#ff385c", "tagline": "Znajdź nocleg w dowolnym miejscu."},
+    {"domain": "booking.com",      "name": "Booking.com",    "kind": "shop",   "color": "#003580", "tagline": "Rezerwuj noclegi taniej."}
+  ]
+}
