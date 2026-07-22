@@ -7,7 +7,7 @@ Profil-Zaufany-style identity portal), plus a virtual SMS carrier and a URI
 automations run against something that behaves like production — real HTTPS,
 real domains, real second factors — without touching the real internet.
 
-Part of the trio: **net-user-pl** (the network) · [pc-user-pl](https://github.com/if-uri/pc-user-pl) (the computer) · [mobile-user-pl](https://github.com/if-uri/mobile-user-pl) (the phone). Orchestrated together by the `pc1` project.
+Part of the trio: **net-user-pl** (the network) · [pc-user-pl](https://github.com/digitaltwin-run/pc-user-pl) (the computer) · [mobile-user-pl](https://github.com/digitaltwin-run/mobile-user-pl) (the phone). Orchestrated together by the [`pc1`](https://github.com/digitaltwin-run/pc1) project.
 
 ## What runs (all on the `netpl` docker network)
 
